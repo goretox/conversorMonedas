@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../pictures/foto-cripto-2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Title Styles */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #eea00f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    text-align: center;
+    color: #5a2d2d; /* Ajustado para mayor contraste */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 15px 0;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.95); /* Más opaco para mejor lectura */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs & Select */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al enfocar */
+input[type="number"]:focus,
+select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Results Display */
+div#currencyResult,
+div#cryptoResult {
+    margin-top: 10px;
+    padding: 12px;
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input[type="number"],
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+}
